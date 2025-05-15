@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+@font-face {
+   font-family: 'Edo';
+   src: url('/fonts/edo.ttf') format('truetype');
+   font-weight: 400 900;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Delicious';
+   src: url('/fonts/DeliciousHandrawn-Regular.ttf') format('truetype');
+   font-weight: 400 900;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Shining';
+   src: url('/fonts/Shining Monday.otf') format('opentype');
+   font-weight: 400 900;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Bonzai';
+   src: url('/fonts/bonzai.ttf') format('truetype');
+   font-weight: 400 900;
+   font-style: normal;
+}
+
+:root {
+   --background: #000000;
+   --foreground: #ededed;
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+      --background: #000000;
+      --foreground: #ededed;
+   }
+}
+
+body {
+   color: var(--foreground);
+   background: var(--background);
+   font-family: 'Orbitron', sans-serif;
+   overflow-x: hidden;
+}
+
+.main-anim-text {
+   position: relative;
+   animation: glitch 1s linear infinite;
+   display: inline-block; /* Обеспечивает правильное поведение анимации для текста */
+}
+
+@keyframes glitch {
+   2%,
+   64% {
+      transform: translate(2px, 0) skew(0deg);
+   }
+   4%,
+   60% {
+      transform: translate(-2px, 0) skew(0deg);
+   }
+   62% {
+      transform: translate(0, 0) skew(5deg);
+   }
+}
+
+.main-anim-text::before,
+.main-anim-text::after {
+   content: attr(data-text); /* Используется текст из атрибута data-text */
+   position: absolute;
+   left: 0;
+   width: 100%;
+   color: white;
+}
+
+.main-anim-text::before {
+   animation: glitchTop 1s linear infinite;
+   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+   2%,
+   64% {
+      transform: translate(2px, -2px);
+   }
+   4%,
+   60% {
+      transform: translate(-2px, 2px);
+   }
+   62% {
+      transform: translate(13px, -1px) skew(-13deg);
+   }
+}
+
+.main-anim-text::after {
+   animation: glitchBottom 1.5s linear infinite;
+   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBottom {
+   2%,
+   64% {
+      transform: translate(-2px, 0);
+   }
+   4%,
+   60% {
+      transform: translate(2px, 0);
+   }
+   62% {
+      transform: translate(-22px, 5px) skew(21deg);
+   }
+}
