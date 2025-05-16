@@ -132,7 +132,7 @@ const [showCopied, setShowCopied] = useState(false);
                   </div>
                   <div className='mt-8 mx-auto md:mx-0'>
                      <Link
-                        href='https://raydium.io/swap/?inputMint=sol&outputMint=rcRybMHUKMQNDHZpJeXJCAMkd5XkuHHFWgjDi53pump'
+                        href='https://pump.fun/coin'
                         target='_blank'
                         className='relative bg-[#079117] text-white text-[28px] px-10 py-0.5 transition border-2 border-transparent 
                         before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
@@ -228,9 +228,9 @@ const [showCopied, setShowCopied] = useState(false);
                      transfer the SOL to your Solana wallet.
                      <br />
                      <br />
-                     Exchanging for $KAWAI on Raydium: Visit Raydium and
+                     Exchanging for $KAWAI on Pumpswap: Visit Pumpswap and
                      connect your Phantom wallet. Use the swap feature on
-                     Raydium to exchange your SOL for $KAWAI tokens.
+                     Pumpswap to exchange your SOL for $KAWAI tokens.
                   </p>
 
                   {/* Кнопки */}
@@ -251,7 +251,7 @@ const [showCopied, setShowCopied] = useState(false);
                         before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
                         hover:before:opacity-100 hover:bg-[#00c817]'
                      >
-                        Go Pumpfun
+                        Go Pumpswap
                      </Link>
                   </div>
                </div>
