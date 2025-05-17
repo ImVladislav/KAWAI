@@ -9,10 +9,10 @@ import { MusicButton } from './MusicButton';
 import { Footer } from './Footer';
 
 export const icons = [
-   { img: 'ico_1', url: 'https://t.me/XXXXXX' },
-   { img: 'ico_2', url: 'https://x.com/AXXXXXX' },
-   { img: 'ico_3', url: 'https://www.dextools.io/app/en/solana/pair-explorer/XXXXXXX' },
-   { img: 'ico_4', url: 'https://dexscreener.com/solana/XXXXXXX' }
+   { img: 'ico_1', url: 'https://t.me/KawaiAgent' },
+   { img: 'ico_2', url: 'https://x.com/i/communities/1923652589448532153' },
+   { img: 'ico_3', url: 'https://www.dextools.io/app/en/solana/pair-explorer/eJcxLfN96TyHAQpMfJQpVvMMWS9mgfM5Vfty9TDpump?t=1746999917219' },
+   { img: 'ico_4', url: 'https://dexscreener.com/solana/eJcxLfN96TyHAQpMfJQpVvMMWS9mgfM5Vfty9TDpump' }
 ];
 
 export default function Home() {
@@ -90,13 +90,13 @@ const [showCopied, setShowCopied] = useState(false);
 <div
    className='relative bg-[#079117] w-full md:w-[580px] h-[50px] mt-16 flex items-center justify-center text-center cursor-pointer group'
    onClick={() => {
-      navigator.clipboard.writeText('XXXXXXX');
+      navigator.clipboard.writeText('eJcxLfN96TyHAQpMfJQpVvMMWS9mgfM5Vfty9TDpump');
       setShowCopied(true);
       setTimeout(() => setShowCopied(false), 2000);
    }}
 >
    <p className='text-[15px] md:text-[27px] z-10 font-bold tracking-wider text-black'>
-      XXXXXXX
+      eJcxLfN96TyHAQpMfJQpVvMMWS9mgfM5Vfty9TDpump
    </p>
 
    {showCopied && (
@@ -132,7 +132,7 @@ const [showCopied, setShowCopied] = useState(false);
                   </div>
                   <div className='mt-8 mx-auto md:mx-0'>
                      <Link
-                        href='https://pump.fun/coin'
+                        href='https://pump.fun/coin/eJcxLfN96TyHAQpMfJQpVvMMWS9mgfM5Vfty9TDpump'
                         target='_blank'
                         className='relative bg-[#079117] text-white text-[28px] px-10 py-0.5 transition border-2 border-transparent 
                         before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
@@ -245,7 +245,7 @@ const [showCopied, setShowCopied] = useState(false);
                         Get Phantom
                      </Link>
                      <Link
-                        href='https://pump.fun/coin/'
+                        href='https://pump.fun/coin/eJcxLfN96TyHAQpMfJQpVvMMWS9mgfM5Vfty9TDpump'
                         target='_blank'
                         className='relative bg-[#079117] text-white text-[28px] px-10 py-0.5 transition border-2 border-transparent 
                         before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 

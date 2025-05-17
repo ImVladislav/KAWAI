@@ -30,7 +30,7 @@ export default function Navbar() {
                How to Buy
             </Link>
             <Link
-               href='https://dexscreener.com/solana/rcRybMHUKMQNDHZpJeXJCAMkd5XkuHHFWgjDi53pump'
+               href='https://dexscreener.com/solana/eJcxLfN96TyHAQpMfJQpVvMMWS9mgfM5Vfty9TDpump'
                target='_blank'
                className='text-white hover:text-gray-300'
             >
@@ -40,7 +40,8 @@ export default function Navbar() {
 
          <div className='flex items-center gap-4 text-[24px]'>
             <Link
-               href='https://raydium.io/swap/?inputMint=sol&outputMint=rcRybMHUKMQNDHZpJeXJCAMkd5XkuHHFWgjDi53pump'
+               href='https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=eJcxLfN96TyHAQpMfJQpVvMMWS9mgfM5Vfty9TDpump
+'
                target='_blank'
                className="relative bg-[#079117] text-white text-[28px] px-10 py-0.5 transition border-2 border-transparent 
                before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
@@ -84,7 +85,7 @@ export default function Navbar() {
                      How to Buy
                   </Link>
                   <Link
-                     href='https://dexscreener.com/solana/rcRybMHUKMQNDHZpJeXJCAMkd5XkuHHFWgjDi53pump'
+                     href='https://dexscreener.com/solana/eJcxLfN96TyHAQpMfJQpVvMMWS9mgfM5Vfty9TDpump'
                      target='_blank'
                      onClick={() => setMenuOpen(false)}
                   >
